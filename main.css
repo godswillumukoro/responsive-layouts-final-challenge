@@ -245,33 +245,14 @@ img {
     max-width: 40%;
 }
 
-/* larger screens */
+/* smaller screens */
 
 @media (max-width: 900px) {
-    /*.main-navigation {
-        padding: 2rem;
-    }
 
-    .main-navigation--content {
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .main-navigation--content .logo {
-        margin-bottom: 1.2rem;
-    }
-
-    .main-navigation-list li {
-        margin-left: 1rem;
-    }
-
-    .main-navigation-list a {
-        font-size: .8rem;
-    }*/
+    
 
     .main-navigation {
         background-color: var(--cl-black);
-        text-align: center;
 
     }
 
@@ -283,22 +264,94 @@ img {
         align-items: center;
     }
 
+    /* toggle */
+    .nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: var(--cl-dark);
+    color: white;
+    transition: opacity 250ms ease;
+    
+    position: absolute;
+    left: 10%;
+    top: 7px;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+/* made changes here from video
+   to make it more accessible.
+   
+   Works the same :) */
+.main-navigation-list {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+} 
+
+/* end toggle */
+
     .logo {
         font-family: var(--ff-heading);
         font-size: var(--fs-lg);
         color: var(--cl-khaki-accent);
         font-weight: 700;
-        text-align: center;
     }
 
     .main-navigation-list {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+        padding: 2rem 0;
     }
 
     .main-navigation-list li {
         margin-left: 2.5rem;
+    }
+
+    .auth {
+        display: flex;
     }
 
     .jumbotron--content {
@@ -322,6 +375,7 @@ img {
         font-size: var(--fs-sm);
         font-weight: 200;
     }
+
 
     .container {
         margin: 0 2rem;
