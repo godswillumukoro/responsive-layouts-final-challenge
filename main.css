@@ -249,7 +249,14 @@ img {
 
 @media (max-width: 900px) {
 
-    
+    .jumbotron p,
+    .box p,
+    .footer-content-items p,
+    .footer-content-items a {
+        font-weight: 300;
+    }
+
+
 
     .main-navigation {
         background-color: var(--cl-black);
