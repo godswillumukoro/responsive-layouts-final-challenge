@@ -81,6 +81,10 @@ img {
     margin-bottom: 1rem;
 }
 
+.ds-none {
+    display: none;
+}
+
 /* navigation */
 
 .main-navigation {
@@ -106,6 +110,10 @@ img {
 
 .main-navigation-list li {
     margin-left: 2.5rem;
+}
+
+.auth {
+    display: flex;
 }
 
 .jumbotron {
@@ -273,71 +281,75 @@ img {
 
     /* toggle */
     .nav-toggle {
-    cursor: pointer;
-    border: 0;
-    width: 3em;
-    height: 3em;
-    padding: 0em;
-    border-radius: 50%;
-    background: var(--cl-dark);
-    color: white;
-    transition: opacity 250ms ease;
-    
-    position: absolute;
-    left: 11%;
-    top: 11px;
-}
+        cursor: pointer;
+        border: 0;
+        width: 3em;
+        height: 3em;
+        padding: 0em;
+        border-radius: 50%;
+        background: var(--cl-dark);
+        color: white;
+        transition: opacity 250ms ease;
 
-.nav-toggle:focus,
-.nav-toggle:hover {
-    opacity: .75;
-}
+        position: absolute;
+        left: 11%;
+        top: 11px;
+    }
 
-.hamburger {
-    width: 50%;
-    position: relative;
-}
+    .nav-toggle:focus,
+    .nav-toggle:hover {
+        opacity: .75;
+    }
 
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-    display: block;
-    margin: 0 auto;
-    height: 3px;
-    background: white;
-}
+    .hamburger {
+        width: 50%;
+        position: relative;
+    }
 
-.hamburger::before,
-.hamburger::after {
-    content: '';
-    width: 100%;
-}
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        display: block;
+        margin: 0 auto;
+        height: 3px;
+        background: white;
+    }
 
-.hamburger::before {
-    transform: translateY(-6px);
-}
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        width: 100%;
+    }
 
-.hamburger::after {
-    transform: translateY(3px);
-}
+    .hamburger::before {
+        transform: translateY(-6px);
+    }
 
-/* made changes here from video
+    .hamburger::after {
+        transform: translateY(3px);
+    }
+
+    /* made changes here from video
    to make it more accessible.
    
    Works the same :) */
-.main-navigation-list {
-    visibility: hidden;
-    height: 0;
-    position: absolute;
-}
+    .main-navigation-list {
+        visibility: hidden;
+        height: 0;
+        position: absolute;
+    }
 
-.nav--visible {
-    visibility: visible;
-    height: auto;
-    position: relative;
-} 
+    .nav--visible {
+        visibility: visible;
+        height: auto;
+        position: relative;
+    }
 
-/* end toggle */
+    .ds-none {
+        display: block;
+    }
+
+    /* end toggle */
 
     .logo {
         font-family: var(--ff-heading);
@@ -355,10 +367,6 @@ img {
 
     .main-navigation-list li {
         margin-left: 2.5rem;
-    }
-
-    .auth {
-        display: flex;
     }
 
     .jumbotron--content {
