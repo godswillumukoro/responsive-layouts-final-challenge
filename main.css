@@ -247,13 +247,14 @@ img {
 /* larger screens */
 
 @media (max-width: 900px) {
-    .main-navigation {
-        padding: 2rem;
+    .main-navigation--content .container {
+        max-width: 0;
     }
 
     .main-navigation--content {
         flex-direction: column;
         justify-content: space-between;
+        padding: 2rem;
     }
 
     .main-navigation--content .logo {
@@ -261,7 +262,7 @@ img {
     }
 
     .main-navigation-list li {
-        margin-left: .4rem;
+        margin-left: 1rem;
     }
 
     .main-navigation-list a {
