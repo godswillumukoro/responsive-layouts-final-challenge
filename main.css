@@ -248,7 +248,7 @@ img {
 
 @media (max-width: 900px) {
     .main-navigation {
-        padding: 2rem;
+        padding: 1.2rem;
     }
 
     .main-navigation--content {
