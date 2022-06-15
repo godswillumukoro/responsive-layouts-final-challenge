@@ -277,8 +277,8 @@ img {
     transition: opacity 250ms ease;
     
     position: absolute;
-    left: 10%;
-    top: 7px;
+    left: 11%;
+    top: 11px;
 }
 
 .nav-toggle:focus,
