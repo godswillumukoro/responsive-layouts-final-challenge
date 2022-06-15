@@ -271,7 +271,10 @@ img {
 
     .main-navigation {
         background-color: var(--cl-black);
+        text-align: center;
+
     }
+
 
     .main-navigation--content {
         display: flex;
@@ -285,11 +288,13 @@ img {
         font-size: var(--fs-lg);
         color: var(--cl-khaki-accent);
         font-weight: 700;
+        text-align: center;
     }
 
     .main-navigation-list {
         display: flex;
         flex-direction: column;
+        gap: 1.5rem;
     }
 
     .main-navigation-list li {
